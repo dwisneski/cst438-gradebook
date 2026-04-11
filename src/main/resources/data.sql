@@ -30,8 +30,10 @@ insert into section (section_no, course_id, section_id, term_id, building, room,
                                                                                                               (5, 'cst334', 1, 11, '90', 'B100', 'T H 10-11', 'ted@csumb.edu'),
                                                                                                               (6, 'cst334', 2, 11, '90', 'B101', 'M W 10-11', 'ted2@csumb.edu'),
                                                                                                               (2, 'cst599', 1, 11, '10', 'B400', 'F 9-10',    'ted@csumb.edu'),
-                                                                                                              (4, 'cst599', 1, 12, '90', 'B104', 'W F 10-11', 'ted@csumb.edu');
-
+                                                                                                              (4, 'cst599', 1, 12, '90', 'B104', '<----', 'ted@csumb.edu'),
+                                                                                                              -- Stress Test
+                                                                                                              (8, 'cst336', 1, 12, '90', 'B105', '1', 'ted@csumb.edu'),  -- CST336 Internet Programming
+                                                                                                              (7, 'cst363', 1, 12, '90', 'B106', '2', 'ted@csumb.edu'); -- CST363 Database
 
 -- students sama, samb and samc enrolled into cst599-1 Spring 2026
 insert into enrollment (enrollment_id, grade, section_no, user_id) values
@@ -43,4 +45,8 @@ insert into enrollment (enrollment_id, grade, section_no, user_id) values
                                                                        (6, null, 3, 2),
                                                                        (7, null, 1, 7),
                                                                        (8, null, 5, 7),
-                                                                       (9, null, 3, 7);
+                                                                       (9, null, 3, 7),
+                                                                       -- Need to add For code (3 students enrolled in 2026 Fall CST599 )
+                                                                       (10, null, 4, 4),
+                                                                       (11, null, 4, 5),
+                                                                       (12, null, 4, 6);
