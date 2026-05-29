@@ -47,8 +47,8 @@ public class AssignmentController {
             @RequestParam("year") int year ,
             @RequestParam("semester") String semester,
             Principal principal)  {
-        // return the Sections that have instructorEmail for the 
-		// logged in instructor user for the given term.
+        // return the Sections that have instructorEmail for the
+        // logged in instructor user for the given term.
         return null;
     }
 
@@ -70,11 +70,11 @@ public class AssignmentController {
     public AssignmentDTO createAssignment(
             @Valid @RequestBody AssignmentDTO dto,
             Principal principal) {
-        
+
         //  user must be the instructor for the Section
-		//  check that assignment dueDate is between start date and 
-		//  end date of the term
-		//  create and save an Assignment entity
+        //  check that assignment dueDate is between start date and
+        //  end date of the term
+        //  create and save an Assignment entity
         //  return AssignmentDTO with database generated primary key
         return null;
     }
@@ -94,7 +94,7 @@ public class AssignmentController {
     public void deleteAssignment(@PathVariable("assignmentId") int assignmentId, Principal principal) {
         // verify that user is the instructor of the section
         // delete the Assignment entity
-        
+
     }
 
     // student lists their assignments/grades  ordered by due date
@@ -105,9 +105,9 @@ public class AssignmentController {
             @RequestParam("semester") String semester,
             Principal principal) {
 
-        //  return AssignmentStudentDTOs with scores of a 
-		//  Grade entity exists.
-		//  hint: use the GradeRepository findByStudentEmailAndAssignmentId
+        //  return AssignmentStudentDTOs with scores of a
+        //  Grade entity exists.
+        //  hint: use the GradeRepository findByStudentEmailAndAssignmentId
         //  If assignment has not been graded, return a null score.
         return null;
     }
